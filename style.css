@@ -809,6 +809,14 @@ button {
         margin-bottom: 200px;
         flex-direction: column;
     }
+    .autores {
+        display: flex;
+        font-family: "Cronos Pro";
+        color: white;
+        justify-content: center;
+        font-size: 10px;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 801px) {
