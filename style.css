@@ -53,7 +53,9 @@ header {
 }
 
 .img-logo-top {
-    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 15px;
 }
 
@@ -65,17 +67,20 @@ header {
     justify-content: space-between;
 }
 
+.presenteSS {
+    position: relative;
+    margin-left: 50%;
+}
+
 .mulher-01 {
     margin-left: 15%;
     max-width: 600px;
-    max-height: 500px;
-    width: auto;
-    height: auto;
+    max-height: 550px;
+    height: 500px;
 }
 
 .texto-section-01 {
     margin-top: 15%;
-    margin-left: -15%;
     max-width: 600px;
     max-height: 500px;
     width: auto;
@@ -477,9 +482,10 @@ button {
 
 .substituloA {
     font-family: "Cronos Pro";
-    font-size: 52px;
+    font-size: 50px;
     color: white;
-    font-weight: lighter;
+    /* font-weight: lighter; */
+    letter-spacing: 0.5rem;
 }
 
 .celulares {
