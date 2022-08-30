@@ -74,13 +74,18 @@ header {
 
 .mulher-01 {
     margin-left: 15%;
-    max-width: 600px;
-    max-height: 550px;
-    height: 500px;
+    max-width: 850px;
+    max-height: 850px;
+    height: 850px;
+}
+
+.mulher {
+    height: 650px;
 }
 
 .texto-section-01 {
     margin-top: 15%;
+    margin-left: -5%;
     max-width: 600px;
     max-height: 500px;
     width: auto;
@@ -255,7 +260,7 @@ button {
 
 .section-04 {
     width: 100%;
-    height: auto;
+    height: 40vh;
 }
 
 .tela04 {
@@ -597,14 +602,26 @@ button {
         display: none;
     }
     .texto-section-01 {
-        max-width: 300px;
-        max-height: 500px;
-        width: auto;
-        height: auto;
+        width: 450px;
+        height: 750px;
+        margin-top: -50px;
+    }
+    .section-01-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .Text-camapnha {
         flex-direction: column;
         text-align: center;
+    }
+    .SaibaMais {
+        width: 30%;
+        height: 45px;
+        font-weight: 800;
+        font-size: 18px;
+        font-family: "Cronos Pro";
+        font-weight: 500;
     }
     .balao25 {
         display: none;
@@ -664,5 +681,9 @@ button {
     }
     .plataforms {
         flex-direction: column;
+    }
+    .section-03 {
+        width: 100%;
+        height: 80vh;
     }
 }
