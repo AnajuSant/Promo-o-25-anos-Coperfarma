@@ -314,7 +314,12 @@ button {
 }
 
 .cardValidade {
+<<<<<<< HEAD
     height: 600px;
+=======
+    width: 100%;
+    height: 650px;
+>>>>>>> 73708156f62a96fc6046b543b73cc1ed5b9650b3
 }
 
 .card-Validade-posicao {
