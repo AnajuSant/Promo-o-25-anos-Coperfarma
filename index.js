@@ -1,13 +1,16 @@
-const sliders = document.querySelectorAll(".ganhadores");
-const btnPrev = document.getElementById("prev-button");
-const btnNext = document.getElementById("next-button");
+// var mainig = document.querySelector("ganhadores");
+// var imagens = ["img/four.JPG", "img/second.JPG"];
+// var num = 0;
 
-let currentSlide = 0;
+// function next() {
+//     num++;
 
-function hideSlider() {
-  sliders.forEach((item) => item.classList.remove("on"));
-}
+//     if (num >= imagens.length) {
+//         num = 0;
+//         mainig.src = imagens[num];
+//     } else {
+//         mainig.src = imagens[num];
+//     }
+// }
 
-function showSlider() {
-  sliders[currentSlide].classList.add("on");
-}
+// console.log(next);

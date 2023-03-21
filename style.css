@@ -127,7 +127,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 45vh;
 }
 
 /* section2 */
@@ -199,7 +199,7 @@ button {
   justify-content: center;
 }
 
-.box {
+ganhadores .box {
   width: 450px;
   height: 575px;
   background-color: white;
@@ -220,15 +220,133 @@ button {
   opacity: 1;
 }
 
-.ganhadores {
-  /* opacity: 0; */
-  width: 600px;
-  height: 800px;
-  border: 25px solid white;
-  border-top: 30px solid white;
-  border-bottom: 180px solid white;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+main.table {
+  max-width: 100%;
+  height: 92vh;
+  /* aqui eu posso por uma cor de fundo */
+  background-color: #00a5d3;
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  font-family: "Poppins";
+}
+
+.tabelas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table__header {
+  width: 100%;
+  height: 12%;
+  background-color: rgba(232, 233, 248, 0.267);
+  padding: 0.8rem 1rem;
+  color: white;
+  font-family: "Poppins";
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.table__body {
+  width: 95%;
+  max-height: calc(89% - 0.8rem);
+  background-color: #fffb;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+}
+
+.table__body::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.status {
+  border-radius: 2rem;
+  background-color: #4bb543;
+  color: white;
+  padding: 0.4rem 0;
+  width: 100px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+thead tr {
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  background-color: #0000000b;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+
+tbody tr:hover {
+  background-color: #fff6;
+  transition: 0.2s;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 200px;
+  margin-left: -73px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 700px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.btn button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.btn button i {
+  font-size: 50px;
+}
+
+.btn button i:hover {
+  color: rgb(189, 186, 186);
 }
 
 .substitulo {
@@ -707,6 +825,9 @@ button {
 /* Responsividade */
 
 @media screen and (max-width: 800px) {
+  td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
   .section-01 {
     height: auto;
     margin-bottom: 30px;
@@ -903,9 +1024,25 @@ button {
     font-size: 10spx;
     text-align: center;
   }
+  .table__header {
+    width: 100%;
+    height: 8%;
+    font-size: 12px;
+    top: 25px;
+  }
+  .table__body {
+    top: 25px;
+  }
+  .section-02 {
+    width: 100%;
+    height: 120vh;
+  }
 }
 
 @media screen and (min-width: 801px) {
+  td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
   .card-Validade-posicao {
     display: flex;
   }
