@@ -199,15 +199,6 @@ button {
   justify-content: center;
 }
 
-ganhadores .box {
-  width: 450px;
-  height: 575px;
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
 .titul0-sub {
   display: flex;
   flex-direction: column;
@@ -243,6 +234,28 @@ main.table {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.buttonGalery {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: "Poppins";
+  font-size: 18px;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.5));
+}
+
+.buttonGalery:hover {
+  background-color: #00a5d3;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+
+.classbutton {
+  padding: 50px;
 }
 
 .table__header {

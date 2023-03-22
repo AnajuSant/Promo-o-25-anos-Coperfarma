@@ -1,16 +1,36 @@
-// var mainig = document.querySelector("ganhadores");
-// var imagens = ["img/four.JPG", "img/second.JPG"];
-// var num = 0;
+const slider = document.querySelectorAll(".slider");
+const btnPrev = document.getElementById("prev-button");
+const btnNext = document.getElementById("next-button");
 
-// function next() {
-//     num++;
+let currentSlide = 0;
 
-//     if (num >= imagens.length) {
-//         num = 0;
-//         mainig.src = imagens[num];
-//     } else {
-//         mainig.src = imagens[num];
-//     }
-// }
+function hideSlider() {
+    slider.forEach((item) => item.classList.remove("on"));
+}
 
-// console.log(next);
+function showSlider() {
+    slider[currentSlide].classList.add("on");
+}
+
+function nextSlider() {
+    hideSlider();
+    if (currentSlide === slider.length - 1) {
+        currentSlide = 0;
+    } else {
+        currentSlide++;
+    }
+    showSlider();
+}
+
+function prevSlider() {
+    hideSlider();
+    if (currentSlide === 0) {
+        currentSlide = slider.length - 1;
+    } else {
+        currentSlide--;
+    }
+    showSlider();
+}
+
+btnNext.addEventListener("click", nextSlider);
+btnPrev.addEventListener("click", prevSlider);
